@@ -1,0 +1,144 @@
+#nav-bar {
+    color: white;
+    background-color: #e6dfdf;
+    display: flex;
+    height: 100px;
+}
+.form {
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+#city {
+    width: 350px;
+    margin-top: 5px;
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 10px;
+    height: 20px;
+    border-radius: 5%;
+    border: none;
+    outline: none;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(83, 179, 218);
+    border: dodgerblue;
+    margin-bottom: 10px;
+}
+.mainHeading {
+    text-align: center;
+    font-size: 30px;
+    height: fit-content;
+    color: black;
+    margin-top: 20px;
+}
+#load{
+    text-align: center;
+    font-size: 40px;
+}
+#weatherContainer{
+    display: none;
+    width: fit-content;
+    height: 400px;
+    margin: 0 auto;
+    background-color: powderblue;
+}
+#icon {
+    text-align: right;
+    opacity: 1;
+}
+#humidity, #pressure {
+    float: right;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-left: 4px;
+    opacity: 0.8;
+}
+#humidity::before{
+    content: "Humidity::";
+}
+#pressure::before {
+    content: "Pressure::";
+}
+#temperature {
+    width: fit-content;
+    font-size: 30px;
+}
+#temperature::before {
+    content : "Temperature:"
+}
+#weather{
+    width: fit-content;
+    font-size: 25px;
+}
+#weatherDescription {
+    width: fit-content;
+    display: none;
+}
+#location {
+    font-size: 25px;
+    background-color: pink;
+}
+#today {
+    background-color: pink;
+}
+#weatherIcon {
+    box-shadow: black 1px 1px 5px;
+    margin-bottom: 10px;
+}
+.loader {
+    display: none;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #c5a4e0;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 7500px){
+    #weatherContainer {
+        padding: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .form{
+        margin-left: 50px;
+    }
+    #city{
+        width: 150px;
+    }
+    #weatherContainer{
+        padding: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .form{
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    #city{
+        width: 100px;
+    }
+}
+@media (max-width: 400px) {
+    .form{
+        width: 250px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    #city{
+        width: 100px;
+    }
+    #weatherContainer{
+        height: 400px;
+    }
+}

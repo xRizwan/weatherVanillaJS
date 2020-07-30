@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+</head>
+<body>
+    <section id="nav-bar" class="animate__animated animate__backInUp">
+        <div class="mainHeading">Weather App</div>
+        <div class="form">
+            <input
+                name="city"
+                id="city"
+                placeholder="Enter your City"
+                type="text"
+                autofocus required>
+            <button id="submitBtn">Submit</button>
+        </div>
+    </section>
+    <div class="loader"></div>
+    <div id="load"></div>
+    <section id="weatherContainer">
+        <div id="location">Location</div>
+        <div id="today">Today</div>
+        <div id="weather">Weather</div>
+        <div id="weatherDescription">Description</div>
+        <div id="temperature">temperature</div>
+        <div id="icon"><img id="weatherIcon" src="#" alt="image"></div>
+        <div id="humidity">humidity</div>
+        <div id="pressure">pressure</div>
+
+        <button id="celsius">To Celsius</button>
+        <button id="fahrenheit" >To Fahrenheit</button>
+    </section>
+<script src="main.js"></script>
+</body>
+</html>
